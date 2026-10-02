@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Student Creator & Web Developer | Portfolio</title>
+<meta name="description" content="Portfolio of a student digital creator: video editing, thumbnails, websites and apps.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#home">Skip to content</a>
+
+<header class="nav glass">
+  <a href="#home" class="logo" data-f="name">Your Name</a>
+  <nav id="menu" aria-label="Main">
+    <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a>
+    <a href="#projects">Projects</a><a href="#services">Services</a><a href="#journey">Journey</a><a href="#contact">Contact</a>
+  </nav>
+  <div class="tools">
+    <button id="theme" class="icon" aria-label="Toggle dark or light mode">🌙</button>
+    <button id="editBtn" class="btn sm ghost">✎ Edit</button>
+    <button id="burger" class="icon" aria-label="Open menu" aria-expanded="false" aria-controls="menu">☰</button>
+  </div>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="pill">Open to learning &amp; small projects</p>
+      <h1>Hi, I'm <span class="grad" data-f="name">Your Name</span></h1>
+      <h2 class="role" data-f="role">Student • Digital Creator • Web Developer</h2>
+      <p class="lead" data-f="intro">I create engaging videos, eye-catching thumbnails, modern websites, and turn ideas into functional digital products.</p>
+      <div class="cta"><a class="btn" href="#projects">View My Work</a><a class="btn ghost" href="#contact">Contact Me</a></div>
+    </div>
+    <div class="visual" aria-hidden="true">
+      <div class="ring r1"></div><div class="ring r2"></div>
+      <div class="core glass">&lt;/&gt;</div>
+      <div class="chip glass c1">🎬 Edit</div>
+      <div class="chip glass c2">🖼️ Design</div>
+      <div class="chip glass c3">💻 Code</div>
+      <div class="chip glass c4">📱 Apps</div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="sec">
+  <div class="wrap two">
+    <div class="reveal">
+      <h2 class="title">About me</h2>
+      <p data-f="about">I'm a student who loves technology and creativity. I enjoy video editing, design and web development, and I like learning new tools, trying out ideas and turning them into real projects. I'm still learning, and every project teaches me something new.</p>
+    </div>
+    <div class="card glass reveal">
+      <h3>Currently learning</h3>
+      <ul class="tags big">
+        <li>Cleaner UI/UX layouts</li><li>JavaScript fundamentals</li><li>Motion &amp; pacing in edits</li><li>Packaging websites as apps</li><li>Working with clients</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="sec">
+  <div class="wrap">
+    <h2 class="title reveal">Skills</h2>
+    <p class="sub reveal">Honest levels: I'm growing in each of these, and the bars show where I am today.</p>
+    <div class="grid">
+      <article class="card glass reveal"><span class="ic">🎬</span><h3>Video Editing</h3><p>Cuts, captions, transitions and sound for short-form videos.</p><div class="meter" data-l="3"><i></i><i></i><i></i><i></i></div><small>Practicing regularly</small></article>
+      <article class="card glass reveal"><span class="ic">🖼️</span><h3>Thumbnail Design</h3><p>Bold, readable YouTube thumbnails that fit the video's topic.</p><div class="meter" data-l="3"><i></i><i></i><i></i><i></i></div><small>Practicing regularly</small></article>
+      <article class="card glass reveal"><span class="ic">💻</span><h3>Web Development</h3><p>Responsive pages with HTML, CSS and JavaScript.</p><div class="meter" data-l="2"><i></i><i></i><i></i><i></i></div><small>Building projects</small></article>
+      <article class="card glass reveal"><span class="ic">🤖</span><h3>AI-Assisted Development</h3><p>Using AI tools to plan, build and debug websites faster.</p><div class="meter" data-l="3"><i></i><i></i><i></i><i></i></div><small>Practicing regularly</small></article>
+      <article class="card glass reveal"><span class="ic">📱</span><h3>Website → App</h3><p>Turning finished websites into installable apps.</p><div class="meter" data-l="2"><i></i><i></i><i></i><i></i></div><small>Building projects</small></article>
+      <article class="card glass reveal"><span class="ic">🎨</span><h3>UI/UX Design</h3><p>Clean layouts, spacing and color with the user in mind.</p><div class="meter" data-l="1"><i></i><i></i><i></i><i></i></div><small>Learning the basics</small></article>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="sec">
+  <div class="wrap">
+    <h2 class="title reveal">Projects</h2>
+    <p class="sub reveal">Things I've built while learning. Use Edit to add links to your own websites.</p>
+    <div class="grid" id="projGrid"></div>
+  </div>
+</section>
+
+<section id="services" class="sec">
+  <div class="wrap">
+    <h2 class="title reveal">What I can do</h2>
+    <div class="grid">
+      <article class="card glass reveal"><span class="ic">✂️</span><h3>Short-form video editing</h3><p>Reels, Shorts and clips with clean cuts and captions.</p></article>
+      <article class="card glass reveal"><span class="ic">🖼️</span><h3>YouTube thumbnails</h3><p>Eye-catching thumbnails designed around your video.</p></article>
+      <article class="card glass reveal"><span class="ic">🌐</span><h3>Website creation</h3><p>Simple, responsive personal or small-business websites.</p></article>
+      <article class="card glass reveal"><span class="ic">🚀</span><h3>Landing pages</h3><p>One-page sites that explain an idea and drive action.</p></article>
+      <article class="card glass reveal"><span class="ic">🤖</span><h3>AI-assisted websites</h3><p>Fast first versions built with AI, then refined by hand.</p></article>
+      <article class="card glass reveal"><span class="ic">📱</span><h3>Website to app</h3><p>Convert an existing website into a working app.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="journey" class="sec">
+  <div class="wrap">
+    <h2 class="title reveal">My learning journey</h2>
+    <ol class="timeline">
+      <li class="reveal"><b>Learning</b><p>Started with editing and design basics, then discovered web development.</p></li>
+      <li class="reveal"><b>Practicing</b><p>Daily practice with tutorials, small edits and mini layouts.</p></li>
+      <li class="reveal"><b>Building projects</b><p>Built a music player, a study dashboard and this portfolio.</p></li>
+      <li class="reveal"><b>Improving</b><p>Refining design, performance and code quality with every project.</p></li>
+      <li class="reveal"><b>Freelancing</b><p>Next step: taking small client projects and learning from real feedback.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="contact" class="sec">
+  <div class="wrap two">
+    <div class="reveal">
+      <h2 class="title">Have an idea or project?</h2>
+      <p class="lead">Let's build something together.</p>
+      <ul class="links">
+        <li><a data-l="email" href="#">✉️ <span data-f="email">hello@example.com</span></a></li>
+        <li><a data-l="instagram" target="_blank" rel="noopener" href="#">📸 Instagram</a></li>
+        <li><a data-l="youtube" target="_blank" rel="noopener" href="#">▶️ YouTube</a></li>
+        <li><a data-l="github" target="_blank" rel="noopener" href="#">🐙 GitHub</a></li>
+      </ul>
+    </div>
+    <form id="contactForm" class="card glass reveal">
+      <label>Name<input name="n" required autocomplete="name"></label>
+      <label>Email<input name="e" type="email" required autocomplete="email"></label>
+      <label>Message<textarea name="m" rows="4" required></textarea></label>
+      <button class="btn" type="submit">Send Message</button>
+      <p id="formMsg" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div><strong data-f="name">Your Name</strong><p class="mut">Learning, creating and building in public.</p></div>
+    <nav aria-label="Footer"><a href="#home">Home</a><a href="#projects">Projects</a><a href="#services">Services</a><a href="#contact">Contact</a></nav>
+    <div class="soc"><a data-l="instagram" target="_blank" rel="noopener" href="#">Instagram</a><a data-l="youtube" target="_blank" rel="noopener" href="#">YouTube</a><a data-l="github" target="_blank" rel="noopener" href="#">GitHub</a></div>
+  </div>
+  <p class="copy mut">© <span id="yr"></span> <span data-f="name">Your Name</span>. All rights reserved.</p>
+</footer>
+
+<button id="toTop" class="icon top" aria-label="Back to top">↑</button>
+
+<div id="bar" class="bar glass" hidden>
+  <span>Edit mode</span>
+  <button class="btn sm" id="bProfile">Edit profile</button>
+  <button class="btn sm" id="bAdd">+ Add website</button>
+  <button class="btn sm ghost" id="bDone">Done</button>
+</div>
+
+<dialog id="dProfile">
+  <form method="dialog" id="fProfile" class="dform">
+    <h3>Edit profile</h3>
+    <label>Name<input name="name" required></label>
+    <label>Headline<input name="role"></label>
+    <label>Intro (hero)<textarea name="intro" rows="3"></textarea></label>
+    <label>About me<textarea name="about" rows="4"></textarea></label>
+    <label>Email<input name="email" type="email"></label>
+    <label>Instagram URL<input name="instagram" type="url" placeholder="https://instagram.com/you"></label>
+    <label>YouTube URL<input name="youtube" type="url" placeholder="https://youtube.com/@you"></label>
+    <label>GitHub URL<input name="github" type="url" placeholder="https://github.com/you"></label>
+    <div class="row"><button class="btn" value="save">Save</button><button class="btn ghost" type="button" data-close>Cancel</button><button class="btn ghost" type="button" id="reset">Reset all</button></div>
+  </form>
+</dialog>
+
+<dialog id="dProject">
+  <form method="dialog" id="fProject" class="dform">
+    <h3 id="pTitle">Add website</h3>
+    <input type="hidden" name="idx" value="-1">
+    <label>Project name<input name="title" required></label>
+    <label>Description<textarea name="desc" rows="3" required></textarea></label>
+    <label>Technologies (comma separated)<input name="tech" placeholder="HTML, CSS, JavaScript"></label>
+    <label>Live website link<input name="demo" type="url" placeholder="https://your-site.com"></label>
+    <label>Source code link<input name="src" type="url" placeholder="https://github.com/you/repo"></label>
+    <label>Preview image link (optional)<input name="img" type="url" placeholder="https://.../preview.png"></label>
+    <div class="row"><button class="btn" value="save">Save</button><button class="btn ghost" type="button" data-close>Cancel</button></div>
+  </form>
+</dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
